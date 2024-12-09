@@ -1,0 +1,167 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color:aquamarine;
+}
+
+
+.transition {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#auth-form.d-none, #register-form.d-none {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+#auth-form, #register-form {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.3s forwards, fadeOut 0.3s 2.7s forwards;
+}
+
+    .notification.success {
+        background-color: #28a745;
+    }
+
+    .notification.error {
+        background-color: #dc3545;
+    }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+.accordion-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+    .accordion-button:not(.collapsed) {
+        background-color: #0056b3;
+    }
+
+.accordion-body {
+    background-color: #f8f9fa;
+}
+
+.btn-outline-primary, .btn-outline-danger, .btn-outline-info {
+    margin-right: 5px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+#faqAccordion .accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.fa-car, .fa-tools, .fa-headset {
+    transition: transform 0.3s ease;
+}
+
+    .fa-car:hover, .fa-tools:hover, .fa-headset:hover {
+        transform: scale(1.1);
+    }
+
+#contacts a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    #contacts a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+#contacts i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+#contacts .btn {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

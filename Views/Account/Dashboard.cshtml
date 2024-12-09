@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Главная страница";
+}
+
+<div class="container mt-5">
+    <!-- Приветственный блок -->
+    <div class="text-center">
+        <h1 class="display-4 text-primary mb-4">Добро пожаловать в автосалон "АвтоЛюкс"!</h1>
+        <p class="lead text-secondary">Мы предлагаем автомобили вашей мечты с гарантией качества и лучшими условиями покупки.</p>
+        <img src="https://via.placeholder.com/1200x600" alt="Автомобиль мечты" class="img-fluid rounded shadow mt-4">
+        <a href="#catalog" class="btn btn-primary btn-lg mt-4">Посмотреть каталог</a>
+    </div>
+
+
+    <div class="row mt-5 text-center">
+        <!-- Широкий выбор -->
+        <div class="col-md-4">
+            <i class="fas fa-car fa-3x text-primary mb-3"></i>
+            <h3>Широкий выбор</h3>
+            <p>Мы предлагаем автомобили разных классов: от эконом до премиум.</p>
+        </div>
+        <!-- Гарантия качества -->
+        <div class="col-md-4">
+            <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+            <h3>Гарантия качества</h3>
+            <p>Все автомобили проходят строгую проверку перед продажей.</p>
+        </div>
+        <!-- Поддержка 24/7 -->
+        <div class="col-md-4">
+            <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+            <h3>Поддержка 24/7</h3>
+            <p>Наши специалисты всегда готовы помочь с любыми вопросами.</p>
+        </div>
+    </div>
+
+    <!-- Часто задаваемые вопросы -->
+    <div id="faq" class="mt-5">
+        <h2 class="text-primary">Часто задаваемые вопросы</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Как выбрать подходящий автомобиль?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Наши консультанты помогут вам подобрать автомобиль, который соответствует вашим потребностям и бюджету.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Какие способы оплаты вы предлагаете?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Вы можете оплатить наличными, банковской картой, а также воспользоваться кредитными программами.
+                    </div>
+                </div>
+            </div>
+            <!-- Добавьте больше вопросов -->
+        </div>
+    </div>
+
+    <!-- Контакты и ссылки на медиа -->
+    <div id="contacts" class="mt-5">
+        <h2 class="text-primary">Наши контакты</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Адрес</h5>
+                <p>г. Москва, ул. Примерная, 15</p>
+                <h5>Телефон</h5>
+                <p><a href="tel:+74951234567" class="text-decoration-none text-dark"><i class="fas fa-phone-alt"></i> +7 (495) 123-45-67</a></p>
+                <h5>Email</h5>
+                <p><a href="mailto:info@autolux.ru" class="text-decoration-none text-dark"><i class="fas fa-envelope"></i> info@autolux.ru</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+                <h5>Следите за нами</h5>
+                <a href="https://facebook.com" class="btn btn-outline-primary btn-lg me-2" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" class="btn btn-outline-danger btn-lg me-2" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" class="btn btn-outline-info btn-lg me-2" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://vk.com" class="btn btn-outline-primary btn-lg me-2" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Отзывы -->
+    <div id="reviews" class="mt-5">
+        <h2 class="text-primary">Отзывы наших клиентов</h2>
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>"Купил здесь свой BMW X5, остался очень доволен сервисом и условиями. Спасибо!"</p>
+                    <footer class="blockquote-footer">Иван Иванов</footer>
+                </blockquote>
+            </div>
+        </div>
+        <!-- Добавьте больше отзывов -->
+    </div>
+</div>

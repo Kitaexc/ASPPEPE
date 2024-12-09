@@ -1,0 +1,31 @@
+﻿@model IEnumerable<SiteV4.Models.Product>
+
+<div class="container mt-5">
+    <h2 class="text-primary">Каталог товаров</h2>
+    <form method="get">
+        <input type="text" name="search" class="form-control mb-3" placeholder="Поиск товаров...">
+        <select name="sortOrder" class="form-select mb-3">
+            <option value="">Сортировать по имени</option>
+            <option value="price_asc">Цена: по возрастанию</option>
+            <option value="price_desc">Цена: по убыванию</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Применить</button>
+    </form>
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text"><strong>@product.Price ₽</strong></p>
+                        <a href="/Cart/AddToCart?productId=@product.ProductID" class="btn btn-primary">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

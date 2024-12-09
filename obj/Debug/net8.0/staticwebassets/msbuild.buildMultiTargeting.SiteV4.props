@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SiteV4.props" />
+</Project>
